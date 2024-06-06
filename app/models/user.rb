@@ -4,6 +4,7 @@ class User < ApplicationRecord
           :jwt_authenticatable, jwt_revocation_strategy: JwtDenylist
 
   has_many :baskets
+  has_many :payments
 
   def basket
     baskets.order(created_at: :desc).first

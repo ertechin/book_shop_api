@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   get 'get_basket', to: 'baskets#show'
   post 'update_basket', to: 'baskets#update'
   post 'clear_basket', to: 'baskets#clear'
+  post 'create_payment', to: 'payments#create'
 end
