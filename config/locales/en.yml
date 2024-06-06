@@ -28,4 +28,21 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      basket: "Basket"
+    attributes:
+      basket:
+    errors:
+      models:
+        basket:
+          invalid_action: "Invalid action"
+          basket_not_found: "Basket not found"
+          basket_already_empty: "Basket is already empty"
+          data_cant_empty: "Data can't be empty"
+          item_id_cant_nil: "Item id can't be nil"
+          item_id_cant_blank: "Item id can't be blank"
+          item_exists: "Item already exists"
+          quantity_must_positive: "Quantity must be positive"
+          item_not_exists: "Item not exists"
+
