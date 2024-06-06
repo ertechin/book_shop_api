@@ -13,7 +13,7 @@
     puts "10 Books already exist"
     return
   else
-    10.times do |i|
+    50.times do |i|
       Book.create!(title: Faker::Book.title, author: Faker::Book.author, price: Faker::Number.number(digits: 3))
     end
   end
