@@ -11,7 +11,16 @@ class Basket < ApplicationRecord
     data.keys
   end
 
-  def total_price(items)
+  def clear_basket
+    data.clear
+    save
+  end
+
+  def total_price
+    calculate_price(Book.books_in_basket(self))
+  end
+
+  def calculate_price(items)
     items.sum do |item|
       data[item.id.to_s]['quantity'].to_i * item.price
     end

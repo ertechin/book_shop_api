@@ -6,5 +6,5 @@ json.basket do
     json.price book.price
     json.quantity @basket.data[book.id.to_s]['quantity']
   end
-  json.total_price @basket.total_price(@books)
+  json.total_price @basket.total_price
 end
