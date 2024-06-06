@@ -18,4 +18,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   get 'books', to: 'books#index'
   get 'user_data', to: 'users#show'
+  get 'get_basket', to: 'baskets#show'
+  post 'update_basket', to: 'baskets#update'
+  post 'clear_basket', to: 'baskets#clear'
 end
