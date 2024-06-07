@@ -39,6 +39,11 @@ For  payment, basket, and user-data endpoints you must copy auth and paste it in
 
 ##### you can find postman collection, in side of project named as book_shop_api_postman_collection, copy the json and import to postman.
 
+##### After import, if there is a duplucated headers please uncheck them
+
+<img src="https://i.hizliresim.com/blfcnvg.png" alt="After import, if there is a duplicated headers please uncheck them" width="300"/>\
+
+####
 example endpoint: ``http://0.0.0.0:3000/books``
 
 The Book Shop API provides the following endpoints:
@@ -111,5 +116,6 @@ The Book Shop API provides the following endpoints:
 2. Cd to project folder
 2. `rspec ./spec/baskets_controller_spec.rb`
 3. `rspec ./spec/books_controller_spec.rb`
+
 
 
