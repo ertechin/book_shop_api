@@ -18,7 +18,11 @@ To get started with the Book Shop API, follow these steps:
 5. Configure the environment variables: ``export DEVISE_JWT_SECRET_KEY="shhitissecrett"``
 5. Start the server: `rails s`
 ### With Docker
-
+3. in app directory fund the ``example.env`` and copy what is in side and create file in the same directory name as ``.env`` and paste it.
+4. change RAILS_MASTER_KEY
+5. then run ``docker-compose build``
+6. then run ``docker-compose up``
+##### Everything should be fine, if not, try normal installation.
 ## Authentication
 
 To access certain endpoints, authentication is required. You can obtain an access token by sending a POST request to the 
@@ -27,7 +31,13 @@ To access certain endpoints, authentication is required. You can obtain an acces
 
 endpoint with valid credentials. The access token should be included in the `Authorization` header of subsequent requests.
 
+For  payment, basket, and user-data endpoints you must copy auth and paste it in side of hader named as `Authorization`
+
+##### For postman clear cookies when sending request
+
 ## API Endpoints
+
+##### you can find postman collection, in side of project named as book_shop_api_postman_collection, copy the json and import to postman.
 
 example endpoint: ``http://0.0.0.0:3000/books``
 
